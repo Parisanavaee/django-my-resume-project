@@ -1,0 +1,927 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>پریسا نوایی | توسعه‌دهنده وب و مدرس برنامه‌نویسی</title>
+
+    <meta name="description"
+          content="پریسا نوایی، توسعه‌دهنده وب، مدرس Python و Django و طراح سایت در مشهد">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<!-- Background -->
+<div class="background">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="grid"></div>
+</div>
+
+<!-- Cursor -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            <span>PN</span>
+            <strong>Parisa Navaei</strong>
+        </a>
+
+        <nav class="nav-menu">
+
+            <a href="#home">خانه</a>
+            <a href="#about">درباره من</a>
+            <a href="#skills">مهارت‌ها</a>
+            <a href="#services">خدمات</a>
+            <a href="#projects">پروژه‌ها</a>
+            <a href="#contact">ارتباط با من</a>
+
+        </nav>
+
+        <button class="menu-toggle" aria-label="باز کردن منو">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="container hero-container">
+
+        <div class="hero-content reveal">
+
+            <div class="status">
+                <span class="status-dot"></span>
+                آماده همکاری در پروژه‌های جدید
+            </div>
+
+            <p class="hero-small">
+                سلام، من
+            </p>
+
+            <h1>
+                پریسا <span>نوایی</span>
+            </h1>
+
+            <div class="typing-wrapper">
+                <span class="typing-text"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+
+            <p class="hero-description">
+                توسعه‌دهنده وب، مدرس برنامه‌نویسی و علاقه‌مند به ساخت
+                تجربه‌های دیجیتال مدرن، سریع و کاربردی.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    مشاهده پروژه‌ها
+                    <span>←</span>
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    ارتباط با من
+                </a>
+
+            </div>
+
+            <div class="hero-social">
+
+                <a href="https://github.com/" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://linkedin.com/" target="_blank">
+                    LinkedIn
+                </a>
+
+                <span></span>
+
+                <p>مشهد، ایران</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Code Card -->
+
+        <div class="hero-visual reveal">
+
+            <div class="code-card">
+
+                <div class="window-header">
+
+                    <div class="window-buttons">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                    <span>portfolio.py</span>
+
+                </div>
+
+                <div class="code-content">
+
+<pre><code><span class="purple">class</span> <span class="blue">Developer</span>:
+
+    <span class="purple">def</span> <span class="yellow">__init__</span>(self):
+
+        self.name =
+            <span class="green">"Parisa Navaei"</span>
+
+        self.role =
+            <span class="green">"Web Developer"</span>
+
+        self.skills = [
+            <span class="green">"Python"</span>,
+            <span class="green">"Django"</span>,
+            <span class="green">"React"</span>,
+            <span class="green">"Next.js"</span>
+        ]
+
+    <span class="purple">def</span> <span class="yellow">create</span>(self):
+
+        <span class="purple">return</span>
+            <span class="green">"Something amazing!"</span></code></pre>
+
+                </div>
+
+            </div>
+
+            <div class="floating-card card-python">
+                <span>🐍</span>
+                Python
+            </div>
+
+            <div class="floating-card card-django">
+                <span>⚡</span>
+                Django
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <span>اسکرول کنید</span>
+        <i></i>
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span>01 — درباره من</span>
+
+            <h2>
+                کدنویسی فقط نوشتن کد نیست،
+                <strong>ساختن راه‌حل است.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text reveal">
+
+                <p class="large-text">
+                    من <strong>پریسا نوایی</strong> هستم؛
+                    توسعه‌دهنده وب و مدرس برنامه‌نویسی در مشهد.
+                </p>
+
+                <p>
+                    فعالیت حرفه‌ای من در حوزه طراحی و توسعه وب آغاز شده
+                    و در مسیر یادگیری و تجربه، با تکنولوژی‌های مختلف
+                    Frontend و Backend کار کرده‌ام.
+                </p>
+
+                <p>
+                    در حال حاضر علاوه بر توسعه وب، در زمینه
+                    <strong>تدریس Python و Django</strong> و همچنین
+                    <strong>طراحی و پیاده‌سازی سایت</strong> فعالیت می‌کنم.
+                </p>
+
+                <p>
+                    هدف من ساخت محصولاتی است که علاوه بر ظاهر حرفه‌ای،
+                    سریع، قابل توسعه، امن و کاربردی باشند.
+                </p>
+
+                <a href="#contact" class="text-link">
+                    شروع یک همکاری
+                    <span>←</span>
+                </a>
+
+            </div>
+
+
+            <div class="about-stats reveal">
+
+                <div class="stat-card">
+                    <strong class="counter" data-target="3">0</strong>
+                    <span>+</span>
+                    <p>حوزه تخصصی</p>
+                </div>
+
+                <div class="stat-card">
+                    <strong class="counter" data-target="20">0</strong>
+                    <span>+</span>
+                    <p>پروژه و تمرین</p>
+                </div>
+
+                <div class="stat-card">
+                    <strong class="counter" data-target="5">0</strong>
+                    <span>+</span>
+                    <p>تکنولوژی اصلی</p>
+                </div>
+
+                <div class="stat-card">
+                    <strong>∞</strong>
+                    <p>اشتیاق به یادگیری</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section skills-section">
+
+    <div class="container">
+
+        <div class="section-heading center reveal">
+
+            <span>02 — مهارت‌ها</span>
+
+            <h2>
+                ابزارهایی که با آن‌ها
+                <strong>می‌سازم</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <p>برنامه‌نویسی و توسعه Backend</p>
+                <div class="skill-line">
+                    <span style="width:90%"></span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">⚡</div>
+                <h3>Django</h3>
+                <p>توسعه وب و Backend</p>
+                <div class="skill-line">
+                    <span style="width:85%"></span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">⚛</div>
+                <h3>React</h3>
+                <p>ساخت رابط‌های کاربری مدرن</p>
+                <div class="skill-line">
+                    <span style="width:88%"></span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">▲</div>
+                <h3>Next.js</h3>
+                <p>توسعه اپلیکیشن‌های مدرن وب</p>
+                <div class="skill-line">
+                    <span style="width:85%"></span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">⌘</div>
+                <h3>HTML / CSS / JS</h3>
+                <p>ساخت رابط‌های کاربری Responsive</p>
+                <div class="skill-line">
+                    <span style="width:95%"></span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">◈</div>
+                <h3>Git</h3>
+                <p>مدیریت و کنترل نسخه پروژه‌ها</p>
+                <div class="skill-line">
+                    <span style="width:80%"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span>03 — خدمات</span>
+
+            <h2>
+                چه کاری می‌توانم
+                <strong>برای شما انجام دهم؟</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <article class="service-card reveal">
+
+                <div class="service-number">01</div>
+
+                <div class="service-icon">◈</div>
+
+                <h3>طراحی و توسعه سایت</h3>
+
+                <p>
+                    طراحی و پیاده‌سازی سایت‌های مدرن، Responsive
+                    و کاربرپسند با تمرکز روی عملکرد و تجربه کاربری.
+                </p>
+
+                <ul>
+                    <li>طراحی Frontend</li>
+                    <li>توسعه Backend</li>
+                    <li>پنل مدیریت</li>
+                    <li>اتصال API</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card featured reveal">
+
+                <div class="service-number">02</div>
+
+                <div class="service-icon">🐍</div>
+
+                <h3>تدریس Python</h3>
+
+                <p>
+                    آموزش Python از مفاهیم پایه تا مباحث کاربردی
+                    با تمرکز روی حل مسئله و پروژه‌های واقعی.
+                </p>
+
+                <ul>
+                    <li>مبانی Python</li>
+                    <li>OOP</li>
+                    <li>کار با فایل‌ها</li>
+                    <li>پروژه عملی</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card reveal">
+
+                <div class="service-number">03</div>
+
+                <div class="service-icon">⚡</div>
+
+                <h3>تدریس Django</h3>
+
+                <p>
+                    آموزش توسعه وب با Django و ساخت پروژه‌های
+                    واقعی Backend از پایه تا سطح کاربردی.
+                </p>
+
+                <ul>
+                    <li>ساخت پروژه Django</li>
+                    <li>Models و Database</li>
+                    <li>Authentication</li>
+                    <li>REST API</li>
+                </ul>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= JOURNEY ================= -->
+
+<section class="section journey-section">
+
+    <div class="container">
+
+        <div class="section-heading center reveal">
+
+            <span>04 — مسیر من</span>
+
+            <h2>
+                مسیر یادگیری و
+                <strong>تجربه</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>مرحله 01</span>
+
+                    <h3>توسعه Frontend</h3>
+
+                    <p>
+                        شروع مسیر با HTML، CSS و JavaScript
+                        و سپس ورود به React و Next.js.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>مرحله 02</span>
+
+                    <h3>ورود به Backend</h3>
+
+                    <p>
+                        یادگیری Python و Django برای ساخت
+                        سرویس‌ها و اپلیکیشن‌های سمت سرور.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>مرحله 03</span>
+
+                    <h3>توسعه Full Stack</h3>
+
+                    <p>
+                        ترکیب Frontend و Backend برای ساخت
+                        پروژه‌های کامل و قابل استفاده.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>مرحله 04</span>
+
+                    <h3>تدریس و انتقال دانش</h3>
+
+                    <p>
+                        انتقال تجربه و آموزش Python، Django
+                        و طراحی سایت به علاقه‌مندان برنامه‌نویسی.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span>05 — پروژه‌ها</span>
+
+            <h2>
+                بعضی از چیزهایی که
+                <strong>ساخته‌ام</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+            <article class="project-card project-large reveal">
+
+                <div class="project-image gradient-one">
+
+                    <div class="project-code">
+                        &lt;FullStack /&gt;
+                    </div>
+
+                </div>
+
+                <div class="project-info">
+
+                    <span>Web Development</span>
+
+                    <h3>اپلیکیشن تحت وب</h3>
+
+                    <p>
+                        طراحی و توسعه یک اپلیکیشن وب مدرن
+                        با معماری قابل توسعه.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Next.js</span>
+                        <span>API</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card reveal">
+
+                <div class="project-image gradient-two">
+                    <div class="project-code">
+                        Django
+                    </div>
+                </div>
+
+                <div class="project-info">
+
+                    <span>Backend</span>
+
+                    <h3>سیستم مدیریت</h3>
+
+                    <p>
+                        سیستم مدیریتی با Backend قدرتمند.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card reveal">
+
+                <div class="project-image gradient-three">
+                    <div class="project-code">
+                        Portfolio
+                    </div>
+                </div>
+
+                <div class="project-info">
+
+                    <span>UI / UX</span>
+
+                    <h3>طراحی سایت</h3>
+
+                    <p>
+                        طراحی یک وب‌سایت مدرن و Responsive.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= TEACHING ================= -->
+
+<section class="section teaching-section">
+
+    <div class="container">
+
+        <div class="teaching-box reveal">
+
+            <div class="teaching-content">
+
+                <span class="eyebrow">آموزش برنامه‌نویسی</span>
+
+                <h2>
+                    یادگیری برنامه‌نویسی،
+                    <strong>با پروژه واقعی</strong>
+                </h2>
+
+                <p>
+                    اگر می‌خواهید Python یا Django را یاد بگیرید،
+                    مسیر یادگیری می‌تواند از مفاهیم پایه شروع شود
+                    و قدم‌به‌قدم به ساخت پروژه واقعی برسد.
+                </p>
+
+                <a href="#contact" class="btn btn-primary">
+                    درخواست جلسه آموزشی
+                    <span>←</span>
+                </a>
+
+            </div>
+
+            <div class="teaching-code">
+
+<pre><code><span class="purple">from</span> django <span class="purple">import</span> web
+
+<span class="purple">def</span> <span class="yellow">learn</span>():
+
+    knowledge = <span class="green">"Python"</span>
+    framework = <span class="green">"Django"</span>
+
+    <span class="purple">return</span>
+        knowledge + framework</code></pre>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="container">
+
+        <div class="section-heading center reveal">
+
+            <span>06 — ارتباط با من</span>
+
+            <h2>
+                یک ایده دارید؟
+                <strong>با هم بسازیم.</strong>
+            </h2>
+
+            <p>
+                برای پروژه، همکاری یا جلسات آموزشی
+                می‌توانید با من در ارتباط باشید.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-info reveal">
+
+                <a href="tel:09155955984" class="contact-item">
+
+                    <div class="contact-icon">☎</div>
+
+                    <div>
+                        <span>شماره تماس</span>
+                        <strong>0915 595 5984</strong>
+                    </div>
+
+                </a>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">⌖</div>
+
+                    <div>
+                        <span>موقعیت</span>
+                        <strong>مشهد، ایران</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">@</div>
+
+                    <div>
+                        <span>حوزه فعالیت</span>
+                        <strong>Web Development & Teaching</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form reveal" method="POST">
+
+                {% csrf_token %}
+
+                <div class="form-row">
+
+                    <div class="input-group">
+
+                        <label for="name">نام شما</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="نام و نام خانوادگی"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="phone">شماره تماس</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="شماره تماس"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="subject">موضوع</label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="موضوع پیام"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="message">پیام شما</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="پیام خود را بنویسید..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-primary submit-btn">
+
+                    ارسال پیام
+
+                    <span>←</span>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-container">
+
+        <div class="footer-logo">
+
+            <span>PN</span>
+
+            <div>
+                <strong>پریسا نوایی</strong>
+                <p>Web Developer & Instructor</p>
+            </div>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 Parisa Navaei — تمامی حقوق محفوظ است.
+        </p>
+
+
+        <a href="#home" class="back-top">
+            ↑
+        </a>
+
+    </div>
+
+</footer>
+
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
