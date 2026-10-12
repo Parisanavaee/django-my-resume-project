@@ -8,7 +8,5 @@ def index(request):
         if form.is_valid():
             form.save()
         
-    else:
-        form = ContactForm()
-
+    form = ContactForm()
     return render(request, "index.html", {"form": form})

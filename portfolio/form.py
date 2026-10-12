@@ -5,5 +5,5 @@ from .models import Contact
 class ContactForm(forms.ModelForm): 
     class Meta:
         model = Contact
-        fields = "__all__"
-    
+        fields = ["name", "phone", "subject", "message"]
+        # fields = "__all__"
