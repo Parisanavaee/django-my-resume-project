@@ -1,0 +1,59 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به حساب | Parisa Navaei</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <main class="login-page">
+        <section class="login-card">
+            {% comment %} <a href="{% url '#' %}" class="brand">
+                <span class="brand-icon">P.</span>
+                <span>Parisa <strong>Navaei</strong></span>
+            </a> {% endcomment %}
+
+            <div class="login-heading">
+                <span class="eyebrow">WELCOME BACK</span>
+                <h1>خوش برگشتی!</h1>
+                <p>برای ورود به حساب کاربری خود اطلاعاتت را وارد کن.</p>
+            </div>
+
+            <form method="post" class="login-form">
+                {% csrf_token %}
+
+                {% if form.non_field_errors %}
+                    <div class="error-message">
+                        نام کاربری یا رمز عبور اشتباه است.
+                    </div>
+                {% endif %}
+
+                <label for="{{ form.username.id_for_label }}">نام کاربری</label>
+                {{ form.username }}
+                {% for error in form.username.errors %}
+                    <small class="field-error">{{ error }}</small>
+                {% endfor %}
+
+                <label for="{{ form.password.id_for_label }}">رمز عبور</label>
+                {{ form.password }}
+                {% for error in form.password.errors %}
+                    <small class="field-error">{{ error }}</small>
+                {% endfor %}
+
+                <button type="submit">ورود به حساب <span>←</span></button>
+            </form>
+
+            {% comment %} <a href="{% url 'home' %}" class="back-link">
+                بازگشت به صفحه اصلی
+            </a> {% endcomment %}
+
+            <div class="login-footer">
+                SECURE ACCESS <span>•</span> DJANGO AUTHENTICATION
+            </div>
+        </section>
+    </main>
+</body>
+</html>
